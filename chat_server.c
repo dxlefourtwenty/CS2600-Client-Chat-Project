@@ -14,8 +14,7 @@
 
 #define RESET "\033[37m" // Reset to default color
 #define RED "\033[31m"  // Red text
-#define CYAN "\033[36m" // Blue text
-#define YELLOW "\033[33m" // Yellow text
+#define CYAN "\033[36m" // Cyan text
 
 // Client structure
 typedef struct {
