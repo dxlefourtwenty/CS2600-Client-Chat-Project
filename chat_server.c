@@ -231,7 +231,8 @@ int main() {
   char time_buffer[80];
   getFormattedTime(time_buffer, sizeof(time_buffer));
 
-  FILE *log_file = fopen("chat_history", "ab+");
+  // Open chat_history file, if null create one
+  FILE *log_file = fopen("chat_history", "ab+"); 
   fclose(log_file);
 
   // Initialize clients array
