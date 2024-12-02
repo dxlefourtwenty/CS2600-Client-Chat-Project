@@ -31,6 +31,12 @@ pthread_mutex_t clients_mutex = PTHREAD_MUTEX_INITIALIZER;
 
 int server_socket; // Global server socket for shutdown
 
+void getFormattedTime(char *buffer, size_t bufferSize) {
+  time_t now = time(NULL);
+  struct tm *current_time = localtime(&now);
+  strftime(buffer, bufferSize, "%Y-%m-%d %H:%M:%S", current_time);
+}
+
 // Broadcast msg to clients
 void broadcast_message(char* message, int sender_index) {
   pthread_mutex_lock(&clients_mutex);
@@ -97,10 +103,8 @@ void signal_handler(int sig) {
 void *server_terminal_input(void *arg) {
   char buffer[BUFFER_SIZE];
 
-  time_t now = time(NULL);
-  struct tm *current_time = localtime(&now);
   char time_buffer[80];
-  strftime(time_buffer, sizeof(time_buffer), "%Y-%m-%d %H:%M:%S", current_time);
+  getFormattedTime(time_buffer, sizeof(time_buffer));
 
   while (1) {
     // Read input from terminal
@@ -128,11 +132,11 @@ void *server_terminal_input(void *arg) {
     // Format and broadcast server's msg
     char formatted_message[BUFFER_SIZE];
     snprintf(formatted_message, sizeof(formatted_message), "[SERVER]: %s\n", buffer);
-    printf("%s %s", time_buffer, formatted_message); // Log to the server console
+    printf("%s", formatted_message); // Log to the server console
     broadcast_message(formatted_message, -1); // Broadcast to all clients
 
     FILE *log_file = fopen("chat_history", "a");
-    fprintf(log_file, "%s", formatted_message); // Log server msgs
+    fprintf(log_file, "%s %s", time_buffer, formatted_message); // Log server msgs
     fclose(log_file);
   }
 }
@@ -142,10 +146,8 @@ void *handle_client_com(void *arg) {
   char buffer[BUFFER_SIZE];
   client_t *cli = (client_t *)arg;
 
-  time_t now = time(NULL);
-  struct tm *current_time = localtime(&now);
   char time_buffer[80];
-  strftime(time_buffer, sizeof(time_buffer), "%Y-%m-%d %H:%M:%S", current_time);
+  getFormattedTime(time_buffer, sizeof(time_buffer));
 
   FILE *log_file = fopen("chat_history", "a");
   fprintf(log_file, "%s Client connected: %s\n", time_buffer, cli->name); // Log client connect
@@ -226,10 +228,8 @@ int main() {
   struct sockaddr_in server_addr, client_addr;
   socklen_t client_len = sizeof(client_addr);
 
-  time_t now = time(NULL);
-  struct tm *current_time = localtime(&now);
   char time_buffer[80];
-  strftime(time_buffer, sizeof(time_buffer), "%Y-%m-%d %H:%M:%S", current_time);
+  getFormattedTime(time_buffer, sizeof(time_buffer));
 
   FILE *log_file = fopen("chat_history", "ab+");
   fclose(log_file);
