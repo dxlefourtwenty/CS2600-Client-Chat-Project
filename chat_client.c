@@ -9,7 +9,7 @@
 #include "admin.h"
 
 #define SERVER_IP "127.0.0.1"
-#define SERVER_PORT 1217
+#define SERVER_PORT 12175
 #define BUFFER_SIZE 1024
 
 // handle recieving msgs from server

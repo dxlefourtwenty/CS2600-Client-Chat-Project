@@ -8,7 +8,7 @@
 #include <time.h>
 #include "admin.h"
 
-#define PORT 1217
+#define PORT 12175
 #define MAX_CLIENTS 10
 #define BUFFER_SIZE 1024
 
