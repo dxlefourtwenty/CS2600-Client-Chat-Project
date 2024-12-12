@@ -13,8 +13,6 @@
 #define SERVER_PORT 12175
 #define BUFFER_SIZE 1024
 
-volatile int keep_running = 1; // Flag to control loops
-
 // handle recieving msgs from server
 void *recieve_messages(void *socket_desc) {
   int server_socket = *(int *)socket_desc;
@@ -35,9 +33,7 @@ void *recieve_messages(void *socket_desc) {
 
 void *send_messages(void *socket_desc) {
   int server_socket = *(int *)socket_desc;
-  char buffer[BUFFER_SIZE];
   char message[BUFFER_SIZE];
-  int bytes_read;
 
   while (1) {
     memset(message, 0, BUFFER_SIZE);
@@ -77,7 +73,6 @@ int main() {
   char name[32]; 
   char prefix[16];
   char password[32];
-  char message[BUFFER_SIZE];
 
   // Create socket
   if ((server_socket = socket(AF_INET, SOCK_STREAM, 0)) < 0) {
@@ -139,31 +134,10 @@ int main() {
     exit(EXIT_FAILURE);
   }
 
-  /* send msgs to server
-  while (1) {
-    memset(message, 0, BUFFER_SIZE);
-    fgets(message, BUFFER_SIZE, stdin);
-
-    // Exit chat if user types "/exit"
-    if (strcmp(message, "/exit\n") == 0) {
-      printf("Exiting chat.\n");
-      break;
-    }
-
-    send(server_socket, message, strlen(message), 0); 
-  } */
-
   // Close connection to server and cleanup
   pthread_join(send_thread, NULL);
-  keep_running = 0;
   pthread_join(recv_thread, NULL);
   close(server_socket);
-
-  /*
-  close(server_socket);
-  pthread_cancel(recv_thread);
-  pthread_join(recv_thread, NULL);
-  */
 
   return 0;
 }
