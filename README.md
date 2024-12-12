@@ -1,5 +1,7 @@
 Dale Peligro
+
 Gabriel Indiongco
+
 CS2600 - Project 2 README
 
 Server file:
