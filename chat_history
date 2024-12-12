@@ -305,3 +305,54 @@
 2024-12-10 16:12:07 [[36mUSER[37m] Joshua: Hello
 2024-12-10 16:12:07 [[36mUSER[37m] Joshua: FUCK
 2024-12-10 16:12:07 Client disconnected: Joshua
+
+2024-12-11 21:57:19 Chat server started on port 12175
+2024-12-11 21:57:24 Client connected: Josh
+2024-12-11 21:57:24 [[36mUSER[37m] Josh: Hello
+2024-12-11 21:57:24 [[36mUSER[37m] Josh: Sup
+2024-12-11 21:57:24 [[36mUSER[37m] Josh: FUCK YOU
+2024-12-11 21:57:24 [[36mUSER[37m] Josh: haha
+2024-12-11 21:57:24 Client disconnected: Josh
+2024-12-11 21:57:41 Client connected: Josh
+2024-12-11 21:57:41 [[36mUSER[37m] Josh: Hello
+2024-12-11 21:57:41 [[36mUSER[37m] Josh: FUCK
+2024-12-11 21:57:41 Client disconnected: Josh
+
+2024-12-11 23:20:32 Chat server started on port 12175
+2024-12-11 23:20:39 Client connected: Dale
+2024-12-11 23:20:39 [[31mADMIN[37m] Dale: Hello
+2024-12-11 23:20:39 [[31mADMIN[37m] Dale: Sup
+2024-12-11 23:20:39 Client disconnected: Dale
+2024-12-11 23:20:32 [SERVER]: hello
+2024-12-11 23:21:10 Client connected: Josh
+2024-12-11 23:21:10 [[36mUSER[37m] Josh: Hello
+2024-12-11 23:20:32 [SERVER]: FUCK
+2024-12-11 23:20:32 [SERVER]: Hello
+2024-12-11 23:21:10 Client disconnected: Josh
+
+2024-12-11 23:22:06 Chat server started on port 12175
+2024-12-11 23:22:12 Client connected: Josh
+2024-12-11 23:22:12 [[36mUSER[37m] Josh: Hello
+2024-12-11 23:22:12 [[36mUSER[37m] Josh: Sup
+2024-12-11 23:22:06 [SERVER]: Hello
+2024-12-11 23:22:12 Client disconnected: Josh
+2024-12-11 23:22:06 [SERVER]: Initiated server shutdown.
+2024-12-11 23:22:58 Server has shut down.
+
+2024-12-11 23:25:52 Chat server started on port 12175
+2024-12-11 23:25:57 Client connected: Joshua
+2024-12-11 23:25:57 [[36mUSER[37m] Joshua: Hello
+2024-12-11 23:25:57 [[36mUSER[37m] Joshua: Sup faggots
+2024-12-11 23:25:57 Client disconnected: Joshua
+2024-12-11 23:26:23 Client connected: Joshua
+2024-12-11 23:26:23 [[36mUSER[37m] Joshua: Hello
+2024-12-11 23:25:52 [SERVER]: Initiated server shutdown.
+2024-12-11 23:26:31 Server has shut down.
+
+2024-12-11 23:31:16 Chat server started on port 12175
+2024-12-11 23:31:19 Client connected: Joshua
+2024-12-11 23:31:19 [[36mUSER[37m] Joshua: Hello
+2024-12-11 23:31:19 [[36mUSER[37m] Joshua: Sup
+2024-12-11 23:31:19 Client disconnected: Joshua
+2024-12-11 23:31:16 [SERVER]: Initiated server shutdown.
+2024-12-11 23:31:33 Server has shut down.

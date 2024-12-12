@@ -167,6 +167,7 @@ void *handle_client_com(void *arg) {
     if (bytes_recieved <= 0) {
       log_file = fopen("chat_history", "a");
       fprintf(log_file, "%s Client disconnected: %s\n", time_buffer, cli->name); // Log client disconnect
+      printf("%s has left the server.\n", cli->name); // Tell server client has left
       fclose(log_file);
       break; // client disconnected
     }

@@ -33,25 +33,25 @@ void *recieve_messages(void *socket_desc) {
   pthread_exit(NULL);
 }
 
-void *send_messages(void *arg) {
-  int server_socket = *(int *)arg;
+void *send_messages(void *socket_desc) {
+  int server_socket = *(int *)socket_desc;
   char buffer[BUFFER_SIZE];
   char message[BUFFER_SIZE];
   int bytes_read;
 
-  while (keep_running && (bytes_read = recv(server_socket, buffer, sizeof(buffer) - 1, 0)) > 0) {
-    buffer[bytes_read] = '\0';
+  while (1) {
     memset(message, 0, BUFFER_SIZE);
     fgets(message, BUFFER_SIZE, stdin);
 
     // Exit chat if user types "/exit"
     if (strcmp(message, "/exit\n") == 0) {
       printf("Exiting chat.\n");
+      exit(EXIT_SUCCESS);
       break;
     }
-  }
 
-  send(server_socket, message, strlen(message), 0);
+    send(server_socket, message, strlen(message), 0);
+  }
 }
 
 
@@ -133,13 +133,13 @@ int main() {
     exit(EXIT_FAILURE);
   }
 
-  /* send msgs to server
+  // send msgs to server
   if (pthread_create(&send_thread, NULL, send_messages, (void *)&server_socket) != 0) {
     perror("Thread creation failed");
     exit(EXIT_FAILURE);
-  } */
+  }
 
-  // send msgs to server
+  /* send msgs to server
   while (1) {
     memset(message, 0, BUFFER_SIZE);
     fgets(message, BUFFER_SIZE, stdin);
@@ -151,17 +151,19 @@ int main() {
     }
 
     send(server_socket, message, strlen(message), 0); 
-  }
+  } */
 
-  /* Close connection to server and cleanup
+  // Close connection to server and cleanup
   pthread_join(send_thread, NULL);
   keep_running = 0;
   pthread_join(recv_thread, NULL);
-  close(server_socket); */
+  close(server_socket);
 
+  /*
   close(server_socket);
   pthread_cancel(recv_thread);
   pthread_join(recv_thread, NULL);
+  */
 
   return 0;
 }
