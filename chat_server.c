@@ -227,6 +227,7 @@ int main() {
   int new_socket;
   struct sockaddr_in server_addr, client_addr;
   socklen_t client_len = sizeof(client_addr);
+  int opt = 1; // Option value
 
   char time_buffer[80];
   getFormattedTime(time_buffer, sizeof(time_buffer));
@@ -241,6 +242,12 @@ int main() {
   // Create the socket
   if ((server_socket = socket(AF_INET, SOCK_STREAM, 0)) == 0) {
     perror("Socket failed");
+    exit(EXIT_FAILURE);
+  }
+
+  if (setsockopt(server_socket, SOL_SOCKET, SO_REUSEADDR, &opt, sizeof(opt)) < 0) {
+    perror("setsockopt failed");
+    close(server_socket);
     exit(EXIT_FAILURE);
   }
 
@@ -355,7 +362,7 @@ int main() {
       free(cli);
       continue;
     }
-    pthread_detach(tid);
+    pthread_join(tid, NULL);
   }
 
   return 0;

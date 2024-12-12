@@ -6,3 +6,302 @@
 2024-12-02 15:08:41 [SERVER]: i guess not
 2024-12-02 15:08:41 [SERVER]: Initiated server shutdown.
 2024-12-02 15:09:06 Server has shut down.
+
+2024-12-03 15:07:15 Chat server started on port 1217
+2024-12-03 15:07:15 [SERVER]: hello
+2024-12-03 15:07:15 [SERVER]: Initiated server shutdown.
+2024-12-03 15:07:32 Server has shut down.
+
+2024-12-03 15:09:16 Chat server started on port 1217
+2024-12-03 15:09:16 [SERVER]: hello
+2024-12-03 15:09:16 [SERVER]: what's up
+2024-12-03 15:09:16 [SERVER]: Initiated server shutdown.
+2024-12-03 15:09:28 Server has shut down.
+
+2024-12-03 17:33:26 Chat server started on port 12175
+2024-12-03 17:35:00 Client connected: Josh
+2024-12-03 17:35:00 [[36mUSER[37m] Josh: Hello
+2024-12-03 17:35:00 Client disconnected: Josh
+2024-12-03 17:33:26 [SERVER]: Initiated server shutdown.
+2024-12-03 17:35:07 Server has shut down.
+
+2024-12-03 17:36:59 Chat server started on port 12175
+2024-12-03 17:36:59 [SERVER]: Initiated server shutdown.
+2024-12-03 17:40:09 Server has shut down.
+
+2024-12-03 17:47:04 Chat server started on port 12175
+2024-12-03 17:47:13 Client connected: Hello
+2024-12-03 17:47:13 [[36mUSER[37m] Hello: Yo
+2024-12-03 17:47:04 [SERVER]: ./shutdown
+2024-12-03 17:47:04 [SERVER]: Initiated server shutdown.
+2024-12-03 17:47:42 Server has shut down.
+
+2024-12-03 17:50:12 Chat server started on port 12175
+2024-12-03 17:50:12 [SERVER]: Initiated server shutdown.
+2024-12-03 17:50:48 Server has shut down.
+
+2024-12-03 17:58:17 Chat server started on port 12175
+2024-12-03 17:58:26 Client connected: Dale
+2024-12-03 17:58:26 Dale shut down the server
+2024-12-03 17:59:12 Server has shut down.
+
+2024-12-03 18:02:23 Chat server started on port 12175
+2024-12-03 18:03:23 Client connected: Dude
+2024-12-03 18:02:23 [SERVER]: /exit
+2024-12-03 18:02:23 [SERVER]: Initiated server shutdown.
+2024-12-03 18:03:30 Server has shut down.
+
+2024-12-03 18:08:47 Chat server started on port 12175
+2024-12-03 18:08:47 [SERVER]: Initiated server shutdown.
+2024-12-03 18:11:09 Server has shut down.
+
+2024-12-03 18:13:28 Chat server started on port 12175
+2024-12-03 18:13:28 [SERVER]: Initiated server shutdown.
+2024-12-03 18:13:58 Server has shut down.
+
+2024-12-03 18:23:58 Chat server started on port 12175
+2024-12-03 18:23:58 [SERVER]: Initiated server shutdown.
+2024-12-03 18:24:49 Server has shut down.
+
+2024-12-03 18:25:13 Chat server started on port 12175
+2024-12-03 18:25:13 [SERVER]: Initiated server shutdown.
+2024-12-03 18:26:37 Server has shut down.
+
+2024-12-03 18:28:03 Chat server started on port 12175
+2024-12-03 18:28:28 Client connected: gabe
+2024-12-03 18:28:28 [[36mUSER[37m] gabe: 1
+2024-12-03 18:28:28 [[36mUSER[37m] gabe: 1
+2024-12-03 18:28:54 Client connected: Dale
+2024-12-03 18:28:54 [[31mADMIN[37m] Dale: Hello
+2024-12-03 18:28:54 Dale shut down the server
+2024-12-03 18:29:11 Server has shut down.
+
+2024-12-03 18:32:26 Chat server started on port 12175
+2024-12-03 18:32:40 Client connected: gabe
+2024-12-03 18:32:40 [[36mUSER[37m] gabe: hi
+2024-12-03 18:32:26 [SERVER]: Initiated server shutdown.
+2024-12-03 18:32:59 Server has shut down.
+
+2024-12-03 18:47:05 Chat server started on port 12175
+2024-12-03 18:48:54 Client connected: gabe
+2024-12-03 18:48:54 [[36mUSER[37m] gabe: 1
+2024-12-03 18:48:54 [[36mUSER[37m] gabe: 2
+2024-12-03 18:48:54 [[36mUSER[37m] gabe: 3
+2024-12-03 18:48:54 [[36mUSER[37m] gabe: 4
+2024-12-03 18:48:54 [[36mUSER[37m] gabe: 5
+2024-12-03 18:48:54 [[36mUSER[37m] gabe: 6
+2024-12-03 18:48:54 [[36mUSER[37m] gabe: 7
+2024-12-03 18:48:54 Client disconnected: gabe
+2024-12-03 18:47:05 [SERVER]: //shutdown
+2024-12-03 18:47:05 [SERVER]: Initiated server shutdown.
+2024-12-03 18:49:09 Server has shut down.
+
+2024-12-03 18:51:10 Chat server started on port 12175
+2024-12-03 18:51:10 [SERVER]: Initiated server shutdown.
+2024-12-03 18:51:23 Server has shut down.
+
+2024-12-03 18:52:04 Chat server started on port 12175
+2024-12-03 18:52:04 [SERVER]: Initiated server shutdown.
+2024-12-03 18:52:12 Server has shut down.
+
+2024-12-03 18:56:41 Chat server started on port 12175
+2024-12-03 18:57:01 Client connected: gabehi
+
+2024-12-03 18:57:01 Client connected: Dale
+2024-12-03 18:57:01 [[36mUSER[37m] gabehi
+: hi
+2024-12-03 18:57:01 [[36mUSER[37m] gabehi
+: hi
+2024-12-03 18:57:01 [[31mADMIN[37m] Dale: Hello
+2024-12-03 18:57:01 [[31mADMIN[37m] Dale: Sup
+2024-12-03 18:57:01 [[36mUSER[37m] gabehi
+: test
+2024-12-03 18:57:01 [[31mADMIN[37m] Dale: What's up
+2024-12-03 18:57:01 Client disconnected: gabehi
+
+2024-12-03 18:57:39 Client connected: gabehi
+
+2024-12-03 18:57:39 [[36mUSER[37m] gabehi
+: hi
+2024-12-03 18:56:41 [SERVER]: Initiated server shutdown.
+2024-12-03 18:57:52 Server has shut down.
+
+2024-12-03 19:03:05 Chat server started on port 12175
+2024-12-03 19:04:09 Client connected: gabe
+2024-12-03 19:04:09 [[36mUSER[37m] gabe: hello
+2024-12-03 19:04:09 [[36mUSER[37m] gabe: test
+2024-12-03 19:04:09 [[36mUSER[37m] gabe: 1
+2024-12-03 19:04:09 [[36mUSER[37m] gabe: 2
+2024-12-03 19:04:09 [[36mUSER[37m] gabe: 3
+2024-12-03 19:04:14 Client connected: Hello
+2024-12-03 19:04:14 [[36mUSER[37m] Hello: Hello
+2024-12-03 19:04:14 [[36mUSER[37m] Hello: Sup
+2024-12-03 19:04:09 [[36mUSER[37m] gabe: hi
+2024-12-03 19:04:09 [[36mUSER[37m] gabe: test
+2024-12-03 19:04:14 [[36mUSER[37m] Hello: d
+2024-12-03 19:04:14 [[36mUSER[37m] Hello: d
+2024-12-03 19:04:14 [[36mUSER[37m] Hello: d
+2024-12-03 19:04:09 [[36mUSER[37m] gabe: wd
+2024-12-03 19:04:09 [[36mUSER[37m] gabe: asd
+2024-12-03 19:04:09 [[36mUSER[37m] gabe: asd
+2024-12-03 19:04:14 [[36mUSER[37m] Hello: d
+2024-12-03 19:04:09 [[36mUSER[37m] gabe: asd
+2024-12-03 19:04:14 [[36mUSER[37m] Hello: d
+2024-12-03 19:04:09 [[36mUSER[37m] gabe: asd
+2024-12-03 19:04:14 [[36mUSER[37m] Hello: d
+2024-12-03 19:04:09 [[36mUSER[37m] gabe: asd
+2024-12-03 19:04:14 [[36mUSER[37m] Hello: d
+2024-12-03 19:04:09 [[36mUSER[37m] gabe: asd
+2024-12-03 19:04:14 [[36mUSER[37m] Hello: d
+2024-12-03 19:04:09 [[36mUSER[37m] gabe: asd
+2024-12-03 19:04:14 [[36mUSER[37m] Hello: d
+2024-12-03 19:04:09 [[36mUSER[37m] gabe: asd
+2024-12-03 19:04:09 [[36mUSER[37m] gabe: asd
+2024-12-03 19:04:09 [[36mUSER[37m] gabe: asd
+2024-12-03 19:04:14 [[36mUSER[37m] Hello: d
+2024-12-03 19:04:14 [[36mUSER[37m] Hello: d
+2024-12-03 19:04:14 [[36mUSER[37m] Hello: d
+2024-12-03 19:04:14 [[36mUSER[37m] Hello: d
+2024-12-03 19:04:09 [[36mUSER[37m] gabe: d
+2024-12-03 19:04:09 [[36mUSER[37m] gabe: d
+2024-12-03 19:04:09 [[36mUSER[37m] gabe: d
+2024-12-03 19:04:09 [[36mUSER[37m] gabe: d
+2024-12-03 19:04:09 [[36mUSER[37m] gabe: d
+2024-12-03 19:04:14 [[36mUSER[37m] Hello: dd
+2024-12-03 19:04:14 [[36mUSER[37m] Hello: 
+2024-12-03 19:04:09 [[36mUSER[37m] gabe: d
+2024-12-03 19:04:14 [[36mUSER[37m] Hello: d
+2024-12-03 19:04:14 [[36mUSER[37m] Hello: d
+2024-12-03 19:04:09 [[36mUSER[37m] gabe: d
+2024-12-03 19:04:14 [[36mUSER[37m] Hello: dd
+2024-12-03 19:04:09 [[36mUSER[37m] gabe: d
+2024-12-03 19:04:14 [[36mUSER[37m] Hello: d
+2024-12-03 19:04:09 [[36mUSER[37m] gabe: d
+2024-12-03 19:04:09 [[36mUSER[37m] gabe: d
+2024-12-03 19:04:09 [[36mUSER[37m] gabe: d
+2024-12-03 19:04:09 [[36mUSER[37m] gabe: d
+2024-12-03 19:04:09 [[36mUSER[37m] gabe: d
+2024-12-03 19:04:09 [[36mUSER[37m] gabe: dd
+2024-12-03 19:04:09 [[36mUSER[37m] gabe: d
+2024-12-03 19:04:09 [[36mUSER[37m] gabe: d
+2024-12-03 19:04:09 [[36mUSER[37m] gabe: d
+2024-12-03 19:04:09 [[36mUSER[37m] gabe: d
+2024-12-03 19:04:09 [[36mUSER[37m] gabe: d
+2024-12-03 19:04:09 [[36mUSER[37m] gabe: d
+2024-12-03 19:04:09 [[36mUSER[37m] gabe: dd
+2024-12-03 19:04:09 [[36mUSER[37m] gabe: d
+2024-12-03 19:04:09 [[36mUSER[37m] gabe: d
+2024-12-03 19:04:09 [[36mUSER[37m] gabe: d
+2024-12-03 19:04:09 Client disconnected: gabe
+2024-12-03 19:04:14 Client disconnected: Hello
+2024-12-03 19:03:05 [SERVER]: Initiated server shutdown.
+2024-12-03 19:05:07 Server has shut down.
+
+2024-12-03 19:05:09 Chat server started on port 12175
+2024-12-03 19:05:21 Client connected: gabe
+2024-12-03 19:05:21 Client connected: Dale
+2024-12-03 19:05:21 [[36mUSER[37m] gabe: hello
+2024-12-03 19:05:21 [[31mADMIN[37m] Dale: Hello
+2024-12-03 19:05:21 [[36mUSER[37m] gabe: wasp
+2024-12-03 19:05:21 Client disconnected: Dale
+2024-12-03 19:05:09 [SERVER]: Initiated server shutdown.
+2024-12-03 19:06:08 Server has shut down.
+
+2024-12-03 19:07:24 Chat server started on port 12175
+2024-12-03 19:07:35 Client connected: gabe
+2024-12-03 19:07:35 [[36mUSER[37m] gabe: hi
+2024-12-03 19:07:35 [[36mUSER[37m] gabe: hell
+2024-12-03 19:07:35 [[36mUSER[37m] gabe: o
+2024-12-03 19:07:44 Client connected: Dale
+2024-12-03 19:07:44 [[31mADMIN[37m] Dale: Hello
+2024-12-03 19:07:35 Client disconnected: gabe
+2024-12-03 19:07:44 Client disconnected: Dale
+2024-12-03 19:07:24 [SERVER]: /shutdown'
+2024-12-03 19:07:24 [SERVER]: Initiated server shutdown.
+2024-12-03 19:08:10 Server has shut down.
+
+2024-12-03 19:56:25 Chat server started on port 12175
+2024-12-03 19:56:33 Client connected: gabe
+2024-12-03 19:57:02 Client connected: Dale
+2024-12-03 19:56:33 [[36mUSER[37m] gabe: hi
+2024-12-03 19:56:33 [[36mUSER[37m] gabe: segl
+2024-12-03 19:57:02 [[31mADMIN[37m] Dale: Hello
+2024-12-03 19:56:33 [[36mUSER[37m] gabe: a
+2024-12-03 19:56:33 [[36mUSER[37m] gabe: sd
+2024-12-03 19:56:33 [[36mUSER[37m] gabe: e
+2024-12-03 19:56:33 [[36mUSER[37m] gabe: sdf
+2024-12-03 19:56:33 [[36mUSER[37m] gabe: e
+2024-12-03 19:56:33 [[36mUSER[37m] gabe: sdf
+2024-12-03 19:56:33 [[36mUSER[37m] gabe: e
+2024-12-03 19:57:02 [[31mADMIN[37m] Dale: He1
+2024-12-03 19:57:02 [[31mADMIN[37m] Dale: 2
+2024-12-03 19:57:02 [[31mADMIN[37m] Dale: 3
+2024-12-03 19:56:33 [[36mUSER[37m] gabe: 4
+2024-12-03 19:56:33 [[36mUSER[37m] gabe: 5
+2024-12-03 19:56:33 [[36mUSER[37m] gabe: 6
+2024-12-03 19:56:33 Client disconnected: gabe
+2024-12-03 19:56:25 [SERVER]: 
+2024-12-03 19:56:25 [SERVER]: 
+2024-12-03 19:56:25 [SERVER]: 
+2024-12-03 19:56:25 [SERVER]: 
+2024-12-03 19:56:25 [SERVER]: 
+
+2024-12-10 15:35:27 Chat server started on port 12175
+2024-12-10 15:35:27 [SERVER]: Hello
+2024-12-10 15:36:49 Client connected: Joshua
+2024-12-10 15:36:49 [[36mUSER[37m] Joshua: Hello
+2024-12-10 15:36:49 [[36mUSER[37m] Joshua: What's up
+2024-12-10 15:36:49 [[36mUSER[37m] Joshua: Fuck me in the ass
+2024-12-10 15:35:27 [SERVER]: Sup dude
+2024-12-10 15:36:49 [[36mUSER[37m] Joshua: You wanna jugule?
+2024-12-10 15:36:49 [[36mUSER[37m] Joshua: BITCH
+2024-12-10 15:36:49 Client disconnected: Joshua
+2024-12-10 15:37:24 Client connected: Daleua
+2024-12-10 15:37:24 [[36mUSER[37m] Daleua: DangerDude07112024-12-10 15:37:24 [[36mUSER[37m] Daleua: Hello
+2024-12-10 15:37:24 [[36mUSER[37m] Daleua: bro
+2024-12-10 15:37:24 [[36mUSER[37m] Daleua: what the fuck
+2024-12-10 15:37:24 Client disconnected: Daleua
+
+2024-12-10 15:37:43 Chat server started on port 12175
+2024-12-10 15:37:54 Client connected: Dale
+2024-12-10 15:37:54 [[31mADMIN[37m] Dale: Hello
+2024-12-10 15:37:54 [[31mADMIN[37m] Dale: I'm here
+2024-12-10 15:37:54 Dale shut down the server
+2024-12-10 15:38:59 Server has shut down.
+
+2024-12-10 15:55:51 Chat server started on port 12175
+2024-12-10 15:55:59 Client connected: Dale
+2024-12-10 15:55:51 [SERVER]: Initiated server shutdown.
+2024-12-10 15:56:19 Server has shut down.
+
+2024-12-10 16:00:57 Chat server started on port 12175
+2024-12-10 16:01:04 Client connected: Dale
+2024-12-10 16:00:57 [SERVER]: hello
+2024-12-10 16:00:57 [SERVER]: sup
+2024-12-10 16:00:57 [SERVER]: Initiated server shutdown.
+2024-12-10 16:01:25 Server has shut down.
+
+2024-12-10 16:06:01 Chat server started on port 12175
+2024-12-10 16:06:08 Client connected: Dale
+2024-12-10 16:06:01 [SERVER]: Initiated server shutdown.
+2024-12-10 16:06:32 Server has shut down.
+
+2024-12-10 16:08:31 Chat server started on port 12175
+2024-12-10 16:08:38 Client connected: Dale
+2024-12-10 16:08:38 [[31mADMIN[37m] Dale: Hello
+2024-12-10 16:08:38 [[31mADMIN[37m] Dale: Sup
+2024-12-10 16:08:38 Client disconnected: Dale
+2024-12-10 16:08:46 Client connected: Joshua
+2024-12-10 16:08:46 [[36mUSER[37m] Joshua: Hello
+2024-12-10 16:08:46 [[36mUSER[37m] Joshua: Sup
+2024-12-10 16:08:46 Client disconnected: Joshua
+
+2024-12-10 16:11:22 Chat server started on port 12175
+2024-12-10 16:11:35 Client connected: Dale
+2024-12-10 16:11:35 [[31mADMIN[37m] Dale: Hello
+2024-12-10 16:11:35 [[31mADMIN[37m] Dale: sup
+2024-12-10 16:11:35 Client disconnected: Dale
+2024-12-10 16:12:07 Client connected: Joshua
+2024-12-10 16:12:07 [[36mUSER[37m] Joshua: Hello
+2024-12-10 16:12:07 [[36mUSER[37m] Joshua: FUCK
+2024-12-10 16:12:07 Client disconnected: Joshua

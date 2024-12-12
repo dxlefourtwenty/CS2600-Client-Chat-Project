@@ -8,9 +8,12 @@
 #include <sys/socket.h>
 #include "admin.h"
 
-#define SERVER_IP "127.0.0.1"
+#define SERVER_IP "134.71.247.23"
+#define SERVER_IP2 "127.0.0.1"
 #define SERVER_PORT 12175
 #define BUFFER_SIZE 1024
+
+volatile int keep_running = 1; // Flag to control loops
 
 // handle recieving msgs from server
 void *recieve_messages(void *socket_desc) {
@@ -29,6 +32,28 @@ void *recieve_messages(void *socket_desc) {
   }
   pthread_exit(NULL);
 }
+
+void *send_messages(void *arg) {
+  int server_socket = *(int *)arg;
+  char buffer[BUFFER_SIZE];
+  char message[BUFFER_SIZE];
+  int bytes_read;
+
+  while (keep_running && (bytes_read = recv(server_socket, buffer, sizeof(buffer) - 1, 0)) > 0) {
+    buffer[bytes_read] = '\0';
+    memset(message, 0, BUFFER_SIZE);
+    fgets(message, BUFFER_SIZE, stdin);
+
+    // Exit chat if user types "/exit"
+    if (strcmp(message, "/exit\n") == 0) {
+      printf("Exiting chat.\n");
+      break;
+    }
+  }
+
+  send(server_socket, message, strlen(message), 0);
+}
+
 
 // Disable terminal echo
 void disable_echo() {
@@ -67,6 +92,9 @@ int main() {
   if (inet_pton(AF_INET, SERVER_IP, &server_addr.sin_addr) <= 0) {
     perror("Invalid address/Address not supported");
     exit(EXIT_FAILURE);
+  } else if (inet_pton(AF_INET, SERVER_IP2, &server_addr.sin_addr) <= 0) {
+    perror("Invalid address/Address not supported");
+    exit(EXIT_FAILURE);
   }
 
   // Connect to the server
@@ -99,13 +127,19 @@ int main() {
   }
 
   // Create a thread to recieve msgs
-  pthread_t recv_thread;
+  pthread_t recv_thread, send_thread;
   if (pthread_create(&recv_thread, NULL, recieve_messages, (void * )&server_socket) != 0) {
     perror("Thread creation failed");
     exit(EXIT_FAILURE);
   }
 
-  // Send msgs to server
+  /* send msgs to server
+  if (pthread_create(&send_thread, NULL, send_messages, (void *)&server_socket) != 0) {
+    perror("Thread creation failed");
+    exit(EXIT_FAILURE);
+  } */
+
+  // send msgs to server
   while (1) {
     memset(message, 0, BUFFER_SIZE);
     fgets(message, BUFFER_SIZE, stdin);
@@ -116,14 +150,18 @@ int main() {
       break;
     }
 
-    send(server_socket, message, strlen(message), 0);
+    send(server_socket, message, strlen(message), 0); 
   }
 
-  // Close connection to server and cleanup
+  /* Close connection to server and cleanup
+  pthread_join(send_thread, NULL);
+  keep_running = 0;
+  pthread_join(recv_thread, NULL);
+  close(server_socket); */
+
   close(server_socket);
   pthread_cancel(recv_thread);
   pthread_join(recv_thread, NULL);
-
 
   return 0;
 }
